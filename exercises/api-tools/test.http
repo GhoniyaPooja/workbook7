@@ -1,0 +1,23 @@
+### GET TODOS 
+GET https://jsonplaceholder.typicode.com/todos
+
+### GET ALBUMS
+GET https://jsonplaceholder.typicode.com/albums 
+
+### GET COMMENTS
+GET https://jsonplaceholder.typicode.com/comments
+
+### GET RANDOM
+GET https://emojihub.yurace.pro/api/random
+
+### GET CAT
+GET https://http.cat/401
+
+### GET PLACHOLDER IMAGES
+GET https://picsum.photos/200/300
+
+### GET EXCHANGE RATES
+GET https://open.er-api.com/v6/latest/USD
+
+### GET ZIPCODE
+GET https://ziptasticapi.com/07003
