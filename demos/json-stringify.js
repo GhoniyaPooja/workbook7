@@ -7,3 +7,6 @@ let job = {
   minSalary: 52000,
   maxSalary: 86000,
 };
+
+let jobAsString = JSON.stringify(job);
+console.log(jobAsString);
