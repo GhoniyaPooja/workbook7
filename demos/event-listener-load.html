@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener Load Example</title>
+  </head>
+  <body>
+    <main></main>
+    <script>
+      window.onload = function () {
+        console.log("onload happened");
+        //html elements
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOMContentLoaded");
+        //html elements
+      });
+    </script>
+  </body>
+</html>
