@@ -1,0 +1,2 @@
+GET https://api.chucknorris.io/jokes/random?category=sport
+Authorization: Bearer fdsklfjkslkjklxlkx 
