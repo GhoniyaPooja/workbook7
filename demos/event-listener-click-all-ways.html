@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener Click Example</title>
+  </head>
+  <body>
+    <main>
+      <button id="clickMeButton" onclick="handleClick()">Click Me!</button>
+    </main>
+    <script>
+      const clickMeButton = document.querySelector("#clickMeButton");
+
+      //1. onclick attribute
+      function handleClickUsingHTMLAttribute() {
+        console.log("handling click using HTML Attribute");
+      }
+
+      //2. onclick property of the button using an anonymous function
+      clickMeButton.onclick = function () {
+        console.log("onclick click");
+      };
+
+      //3. listen for the click event of the button using an anonymous function
+      clickMeButton.addEventListener("click", function () {
+        console.log("event listener click using anonymous function ");
+      });
+
+      //4. define a name function, then wire it up (attach it)
+      // to the onclick property
+      //or the click event of the button
+      function handleClick() {
+        console.log("handling click using named function");
+      }
+
+      clickMeButton.onclick = handleClick;
+      clickMeButton.addEventListener("click", handleClick);
+
+      //5.listen for the click event of the button using an anonymous arrow function
+      clickMeButton.addEventListener("click", () => {
+        console.log("event listener click using anonymous arrow function ");
+      });
+    </script>
+  </body>
+</html>
