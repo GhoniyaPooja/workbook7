@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <main>
+      <button id="greetButton">Greet</button>
+      <p id="messageParagraph"></p>
+    </main>
+    <script>
+      //html elements
+      const greetButton = document.querySelector("#greetButton");
+      const messageParagraph = document.querySelector("#messageParagraph");
+      
+      //functions
+      function initialize() {
+        
+        
+      }  
+      
+      //associate function with event
+      greetButton.addEventListener("click", function () {
+        messageParagraph.innerText = "Helloooo there.";
+      });
+
+      initialize();
+    </script>
+  </body>
+</html>
